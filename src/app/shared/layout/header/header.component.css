@@ -1,5 +1,5 @@
 header {
-    background-color: white;
+    background-color: #172b42;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -24,7 +24,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #000;
+    color: white;
 }
 
 .phone-contact {

@@ -1,0 +1,42 @@
+.footer {
+    background-color: #172b42;
+    padding: 20px 0;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  span{
+    color: white;
+    font-size: 12px;
+  }
+  p{
+    color: white;
+  }
+
+  h4 {
+    color: white;
+    font-size: medium;
+  }
+  
+  .social-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .social-links li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    color: #007bff;
+  }
+
+  i{
+    color: white
+  }
