@@ -1,0 +1,7 @@
+.banner {
+    background-image: url('../../../assets/images/banner-with-us.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: auto; 
+    overflow: hidden;
+}
