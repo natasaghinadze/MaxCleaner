@@ -1,42 +1,62 @@
 .footer {
-    background-color: #506b89;
-    padding: 20px 0;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  span{
-    color: white;
-    font-size: 12px;
-  }
-  p{
-    color: white;
-  }
+  background-color: #506b89;
+  padding: 20px 0;
+  text-align: center;
+  padding: 10px;
+}
 
-  h4 {
-    color: white;
-    font-size: medium;
-  }
-  
-  .social-links {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .social-links li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  .social-links a {
-    text-decoration: none;
-    color: #007bff;
-  }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
 
-  i{
-    color: white
-  }
+span {
+  color: white;
+  font-size: 12px;
+}
+
+p {
+  color: white;
+}
+
+h4 {
+  color: white;
+  font-size: medium;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+i {
+  color: white
+}
+
+.container-child{
+  width: 300px;
+}
+
+.contacts-info img {
+  width: 40px;
+  height: 40px;
+  align-items: center;
+}
+
+.contacts-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

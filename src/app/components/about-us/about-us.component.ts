@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-us.component.css']
 })
 export class AboutUsComponent {
-
+  accordionItems = [
+    { title: 'Item 1', content: 'Content for item 1' },
+    { title: 'Item 2', content: 'Content for item 2' }
+  ];
 }
