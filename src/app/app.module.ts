@@ -9,12 +9,14 @@ import { LayoutModule } from './shared/layout/layout.module';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { SharedModule } from './shared/shared.module';
+import { CompanyServiceComponent } from './components/company-service/company-service.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    CompanyServiceComponent
   ],
   imports: [
     BrowserModule,
