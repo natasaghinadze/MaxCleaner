@@ -7,7 +7,7 @@ import { CompanyServiceComponent } from './components/company-service/company-se
 const routes: Routes = [
   { path: '', component: MainPageComponent },
   { path: 'about-us', component: AboutUsComponent },
-  { path: 'company-service', component: CompanyServiceComponent}
+  { path: 'company-service/:contentId', component: CompanyServiceComponent}
 ];
 
 @NgModule({
