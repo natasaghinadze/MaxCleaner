@@ -6,9 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-us.component.css']
 })
 export class AboutUsComponent {
-  aboutUsAccordionItems = [
-    { title: 'სათაური', content: 'შიდა ტექსტი' },
-    { title: 'სათაური', content: 'შიდა ტექსტი' },
-    { title: 'სათაური', content: 'შიდა ტექსტი' }
-  ];
+
 }

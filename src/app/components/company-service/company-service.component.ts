@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-company-service',
@@ -7,13 +6,12 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./company-service.component.css']
 })
 export class CompanyServiceComponent {
-  contentId: number | null = null;
+  constructor( ) { }
 
-  constructor(private route: ActivatedRoute) {}
-
-  ngOnInit() {
-    this.contentId = this.route.snapshot.paramMap.has('contentId')
-      ? +this.route.snapshot.paramMap.get('contentId')!
-      : null;
-  }
+  scrollToElement(id: string) {
+    var element = document.getElementById(id);
+    if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+    }
 }
+  }

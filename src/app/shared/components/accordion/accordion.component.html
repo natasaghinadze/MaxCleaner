@@ -1,16 +1,57 @@
 <div class="accordion" id="accordionExample">
-  <div class="accordion-item" *ngFor="let item of accordionItems; let i = index">
+  <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse' + i"
-        [attr.aria-controls]="'collapse' + i">
-        {{ item.title }}
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        ჩვენ შესახებ
       </button>
     </h2>
-    <div [id]="'collapse' + i" class="accordion-collapse collapse" [attr.aria-labelledby]="'heading' + i"
-      data-bs-parent="#accordionExample">
+    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-         {{ item.content }}
+        შპს მაქს ქლინერი ქართულ ბაზარზე მოღვაწეობს 2020 წლიდან და ერთგულად დგას მომხმარებლების სისუფთავისა და კომფორტის სადარაჯოზე.ჩვენ ვასუფთავებს ნებისმიერი ტიპის ობიექტს:
+        <br>
+        <ol>
+          <li>საცოვრებელ ფართებს</li>
+          <li>აგარაკებს</li>
+          <li>ოფისებსა თუ კომერციულ ფართებს</li>
+          <li>ნებისმიერის სირთულისა და დაბინძურების ხარისხის მქონე ვიტრაჟებს</li>
+          <li>აუზებს</li>
+          <li>სარდაფებს</li>
+          <li>პარკინგებს</li>
+        </ol>
+        გვაქვს მრავალსართულიანი საცხოვრებელი კორპუსების, საბავშვო ბაღების,სკოლების და მომსაურეობის  სააგენტოების სრული  დასუფთავების გამოცდილება.
       </div>
     </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        ჩვენ ვთანამშრობლობთ
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>კომპანიას მოღვაწეობის მანძილზე შეუსრულებია  არაერთი  კორპორატიული თუ კერძო შეკვეთა, ვთანამშრომლობთ ისეთ ფირმებთან როგორიცაა :</strong>
+        <br>
+        <ol>
+          <li>კარფური</li>
+          <li>შირნჰხოფერი</li>
+          <li>იოლი</li>
+          <li>გერმანია</li>
+          <li>ბეიბი ლაინი</li>
+          <li>ტოტალ შარმი</li>
+          <li>ზღვა ლუდი</li>
+          <li>ბელარუსული მაღაზია</li>
+          <li>ინტერ დეკო</li>
+          <li>ჯაოკენი</li>
+          და სხვა...
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-container">
+  <div class="text">
+    <p>მუდამ თქვენს სამსახურში  Მაქს ქლინერი.</p>
   </div>
 </div>

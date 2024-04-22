@@ -1,20 +1,57 @@
 .banner {
+  position: relative;
+  overflow: hidden;
+  min-height: 80vh;
   background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('../../../assets/images/cleaning-services-baner.jpg');
   background-size: cover;
   background-position: center;
-  min-height: 100vh; 
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+}
+
+.text-container {
   text-align: center;
-  margin-top: 35px;
-  margin-bottom: 35px;
 }
-.banner strong{
-  color: white;
+
+.banner-text {
+  font-family: 'Open Sans', sans-serif;
+  color: #506b89;
+  margin: 0;
+  font-size: 2.5em;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: fadeInUp 1.5s forwards, float 5s infinite alternate;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+section{
+  margin-bottom: 100px;
+}
+
 img {
   max-width: 100%;
   width: 100%;

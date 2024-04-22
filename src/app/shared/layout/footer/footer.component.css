@@ -29,11 +29,10 @@ h4 {
 .social-links {
   list-style-type: none;
   padding: 0;
-}
-
-.social-links li {
-  display: inline-block;
-  margin-right: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: x-large;
 }
 
 .social-links a {
@@ -41,22 +40,24 @@ h4 {
   color: #007bff;
 }
 
-i {
-  color: white
+.social-links i {
+  color: #2e3b4a;
 }
 
 .container-child{
   width: 300px;
 }
 
-.contacts-info img {
-  width: 40px;
-  height: 40px;
-  align-items: center;
-}
-
 .contacts-info {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+}
+
+.contacts-info i {
+  font-size: x-large;
+  color: #2e3b4a;;
+}
+
+.contacts-info p {
+  flex-grow: 1;
 }
