@@ -23,6 +23,8 @@
   transform: translateY(-50px);
   animation: fadeInUp 1.5s forwards, float 5s infinite alternate;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+  letter-spacing: 20px;
+  font-weight: bolder;
 }
 
 @keyframes fadeInUp {
