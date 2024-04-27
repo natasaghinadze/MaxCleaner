@@ -1,10 +1,12 @@
 header {
-    background-color: #506b89;
-    padding: 10px 20px;
+    background-color: whitesmoke;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
+    position: fixed; 
+    width: 100%; 
+    z-index: 2; 
 }
 
 .logo img {
@@ -24,10 +26,10 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: #595858;
 }
 
-.phone-contact {
-    display: flex;
-    justify-content: space-around;
+nav a:hover{
+    color: black;
+    font-weight: bold;
 }
