@@ -1,0 +1,19 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+img{
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.cardDetail{
+    width: 1000px;
+}
+
+.card-detail-body{
+    margin-bottom: 80px;
+}

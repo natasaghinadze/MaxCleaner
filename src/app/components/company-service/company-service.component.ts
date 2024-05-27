@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-company-service',
@@ -6,12 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./company-service.component.css']
 })
 export class CompanyServiceComponent {
+  firstImg = '../../../assets/images/group-5.png'
   constructor( ) { }
 
-  scrollToElement(id: string) {
-    var element = document.getElementById(id);
-    if (element) {
-        element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-    }
-}
   }
