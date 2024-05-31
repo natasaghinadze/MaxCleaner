@@ -9,10 +9,12 @@ import { TidyingOfficesComponent } from './components/company-service/tidying-of
 import { PrivateHousesComponent } from './components/company-service/private-houses/private-houses.component';
 import { BuildingsEntrancesComponent } from './components/company-service/buildings-entrances/buildings-entrances.component';
 import { GeneralArrangementComponent } from './components/company-service/general-arrangement/general-arrangement.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: MainPageComponent },
   { path: 'about-us', component: AboutUsComponent },
+  { path: 'contact', component: ContactComponent },
   { path: 'card', component: CardComponentComponent },
   { path: 'repair', component: RepairComponent },
   { path: 'windows', component: WindowsComponent},

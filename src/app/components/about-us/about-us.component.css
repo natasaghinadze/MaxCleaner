@@ -10,6 +10,22 @@
     margin: 0;
     padding: 0;
 }
-app-accordion{
-    width: 50%;
+.text-box{
+    max-width: 1050px;
+    width: 100%;
+    margin: auto;
+    margin-top:100px;
+}
+.text-box h3{
+    text-align: center;
+    font-family: 'BPG Nino Mtavruli Bold';
+    font-size: 35px;
+    color: white;
+    text-shadow: 3px 3px 5px #bbbbe5;
+}
+
+.text-box p, ol{
+    color: #506b89;
+    font-size: 20px;
+    font-family: 'BPG Nino Mtavruli Bold';
 }
