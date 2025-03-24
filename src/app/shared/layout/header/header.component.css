@@ -1,42 +1,105 @@
 header {
-    background-color: whitesmoke;
-    padding: 0;
+    background: linear-gradient(to right, #326ba7, #818991);
+    /* padding: 15px 30px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; 
-    width: 100%; 
-    z-index: 2; 
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
-    height: 80px;
+    height: 60px;
 }
 
-nav ul {
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-nav li {
-    margin-right: 15px;
+.nav-links li {
+    margin-right: 20px;
 }
 
-nav a {
+.nav-links a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
     text-decoration: none;
-    color: #595858;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+    font-size: 18px;
 }
 
-nav a:hover{
-    color: black;
-    font-weight: bold;
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* ხაზი ტექსტის ქვემოთ */
+    width: 100%;
+    height: 2px;
+    background-color: #accbec; /* ხაზის ფერი */
+    transform: scaleX(0); /* დასაწყისში ხაზი არ ჩანს */
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
 }
 
-@media (max-width: 1000px){
-    header {
+.nav-links a:hover {
+    color: #accbec;
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1); /* ჰოვერზე ხაზი გამოჩნდება */
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger div {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    transition: transform 0.3s;
+}
+
+@media (max-width: 900px) {
+    .nav-links {
         display: flex;
-        justify-content: left;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: linear-gradient(to right, #326ba7, #818991);
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transform: translateY(-20px);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .burger {
+        display: flex;
     }
 }

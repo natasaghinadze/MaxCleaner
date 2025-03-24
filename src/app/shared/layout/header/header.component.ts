@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  menuActive: boolean = false;
+
+        toggleMenu() {
+            this.menuActive = !this.menuActive;
+        }
 }

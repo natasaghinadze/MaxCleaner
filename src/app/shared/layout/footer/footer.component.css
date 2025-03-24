@@ -1,5 +1,5 @@
 .footer {
-  background-color: whitesmoke;
+  background: linear-gradient(to left, #326ba7, #818991);
   padding: 20px 0;
   text-align: center;
   padding: 10px;
@@ -13,12 +13,12 @@
 }
 
 span {
-  color: #595858;
+  color: #3f3d3d;
   font-size: 12px;
 }
 
 p {
-  color: #595858;
+  color: #444343;
 }
 
 h4 {
