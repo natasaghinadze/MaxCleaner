@@ -1,31 +1,92 @@
 .banner {
-    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('../../../assets/images/banner-with-us.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url('../../../assets/images/banner-with-us.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 100vh; 
-    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 80px 20px;
+  }
+  
+  .text-box {
+    max-width: 1100px;
+    width: 100%;
+  }
+  
+  .content-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .content-card h3 {
+    font-family: 'BPG Nino Mtavruli Bold';
+    font-size: 32px;
+    color: #1a3e5d;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .content-card p {
+    font-size: 18px;
+    color: #2c3e50;
+    font-family: 'BPG Nino Mtavruli Bold';
+    margin-bottom: 20px;
+  }
+  
+  .content-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+  
+  .content-card ul li {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-.text-box{
-    max-width: 1050px;
-    width: 100%;
-    margin: auto;
-    margin-top:100px;
-}
-.text-box h3{
-    text-align: center;
     font-family: 'BPG Nino Mtavruli Bold';
-    font-size: 35px;
-    color: white;
-    text-shadow: 3px 3px 5px #bbbbe5;
-}
+  }
+  
+  .partners {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-family: 'BPG Nino Mtavruli Bold';
+    cursor: pointer;
+  }
+  
+  .partners span {
+    background-color: #e0e7ef;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #1d2f40;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+  }
 
-.text-box p, ol{
-    color: #506b89;
-    font-size: 20px;
-    font-family: 'BPG Nino Mtavruli Bold';
-}
+  .partners span:hover {
+    background-color: #d3e3f1;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    color: #0f2c46;
+  }
+  
