@@ -16,6 +16,8 @@ import { BuildingsEntrancesComponent } from './components/company-service/buildi
 import { GeneralArrangementComponent } from './components/company-service/general-arrangement/general-arrangement.component';
 import { TidyingOfficesComponent } from './components/company-service/tidying-offices/tidying-offices.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FacebookModule } from 'ngx-facebook';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { ContactComponent } from './components/contact/contact.component';
     CoreModule,
     LayoutModule,
     SharedModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FacebookModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
