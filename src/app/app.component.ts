@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
     throw new Error('Method not implemented.');
   }
   private initFacebookService(): void { 
-    const InitParams: InitParams = {xfbml:true, version:'v22.0'};
+    const InitParams: InitParams = {xfbml:true, version:'v19.0'};
     this.facebookService.init(InitParams)
   }
 }

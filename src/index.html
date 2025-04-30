@@ -10,7 +10,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <script type=”text/javascript”  src="https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js"></script>
+  <!-- <script type=”text/javascript”  src="https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js"></script> -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v19.0'
+      });
+    };
+  
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+  
 </head>
 <body class="mat-typography">
   <app-root></app-root>
