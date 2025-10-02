@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-buildings-entrances',
-  templateUrl: './buildings-entrances.component.html',
-  styleUrls: ['./buildings-entrances.component.css']
+    selector: 'app-buildings-entrances',
+    templateUrl: './buildings-entrances.component.html',
+    styleUrls: ['./buildings-entrances.component.css'],
+    standalone: true
 })
 export class BuildingsEntrancesComponent {
 
