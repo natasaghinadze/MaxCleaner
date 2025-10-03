@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "MaxCleaner:build:production"
+              "buildTarget": "MaxCleaner:build:production"
             },
             "development": {
-              "browserTarget": "MaxCleaner:build:development"
+              "buildTarget": "MaxCleaner:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "MaxCleaner:build"
+            "buildTarget": "MaxCleaner:build"
           }
         },
         "test": {
