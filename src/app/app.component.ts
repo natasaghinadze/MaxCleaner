@@ -8,7 +8,7 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   standalone: true,
-  imports: [RouterOutlet,HeaderComponent, FooterComponent]
+  imports: [RouterOutlet, HeaderComponent, FooterComponent]
 })
 export class AppComponent {
   title = 'MaxCleaner';
