@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { CardComponentComponent } from '../../../shared/components/card-component/card-component.component';
+import { CardContentComponent } from '../../../shared/components/card-content-component/card-content.component';
 
 @Component({
     selector: 'app-general-arrangement',
     templateUrl: './general-arrangement.component.html',
     styleUrls: ['./general-arrangement.component.css'],
     standalone: true,
-    imports: [CardComponentComponent]
+    imports: [CardContentComponent]
 })
 export class GeneralArrangementComponent {
   img = '../../../assets/images/general arrangement.webp'

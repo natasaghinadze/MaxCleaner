@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
-import { CardComponentComponent } from './shared/components/card-component/card-component.component';
+import { CardContentComponent } from './shared/components/card-content-component/card-content.component';
 import { RepairComponent } from './components/company-service/repair/repair.component';
 import { WindowsComponent } from './components/company-service/windows/windows.component';
 import { TidyingOfficesComponent } from './components/company-service/tidying-offices/tidying-offices.component';
@@ -14,7 +14,7 @@ export const routes: Routes = [
   { path: '', component: MainPageComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'card', component: CardComponentComponent },
+  { path: 'card', component: CardContentComponent },
   { path: 'repair', component: RepairComponent },
   { path: 'windows', component: WindowsComponent },
   { path: 'tidying-offices', component: TidyingOfficesComponent },

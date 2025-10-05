@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { CardComponentComponent } from '../../../shared/components/card-component/card-component.component';
+import { CardContentComponent } from '../../../shared/components/card-content-component/card-content.component';
 
 @Component({
     selector: 'app-repair',
     templateUrl: './repair.component.html',
     styleUrls: ['./repair.component.css'],
     standalone: true,
-    imports: [CardComponentComponent]
+    imports: [CardContentComponent]
 })
 export class RepairComponent {
   firstImg = '../../../assets/images/remontis-shemdgomi-dalageba.webp'

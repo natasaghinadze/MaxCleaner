@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { CardComponentComponent } from '../../../shared/components/card-component/card-component.component';
+import { CardContentComponent } from '../../../shared/components/card-content-component/card-content.component';
 
 @Component({
     selector: 'app-tidying-offices',
     templateUrl: './tidying-offices.component.html',
     styleUrls: ['./tidying-offices.component.css'],
     standalone: true,
-    imports: [CardComponentComponent]
+    imports: [CardContentComponent]
 })
 export class TidyingOfficesComponent {
-  img = '../../../assets/images/ofice-cleaning.jpg'
+  img = 'assets/images/ofice-cleaning.jpg'
 }

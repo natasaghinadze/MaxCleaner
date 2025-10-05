@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { CardComponentComponent } from '../../../shared/components/card-component/card-component.component';
+import { CardContentComponent } from '../../../shared/components/card-content-component/card-content.component';
 
 @Component({
     selector: 'app-windows',
     templateUrl: './windows.component.html',
     styleUrls: ['./windows.component.css'],
     standalone: true,
-    imports: [CardComponentComponent]
+    imports: [CardContentComponent]
 })
 export class WindowsComponent {
-  img = '../../../assets/images/windows.png'
+  img = 'assets/images/windows.png'
 }
